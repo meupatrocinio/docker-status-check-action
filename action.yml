@@ -1,16 +1,20 @@
-name: Git Auto Commit
+name: 'meupatrocinio/docker-status-check-action'
 description: 'Checks container health statuses.'
 
-author: Patrick Almeida <patricktalmeida@gmail.com>
+author: 'Patrick Almeida <patricktalmeida@gmail.com>'
 
 inputs:
   container_name:
-    description: Container name
+    description: 'Container name'
     required: true
   timeout:
-    description: Checks timout
+    description: 'Checks timout'
     required: false
     default: 300
+
+branding:
+  icon: 'git-commit'
+  color: orange
 
 runs:
   using: 'node12'
